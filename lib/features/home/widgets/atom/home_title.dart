@@ -9,7 +9,6 @@ class HomeTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var date = Jiffy();
-    print(date.dateTime.day);
     return CustomTitle(
       text: '${date.EEEE}, ${date.dateTime.day} de ${date.MMMM}',
       fontSize: 20,

@@ -10,18 +10,6 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final AnimationController _animationController = AnimationController(
-      vsync: Navigator.of(context),
-      duration: Duration(seconds: 2),
-    );
-
-    final animation = Tween(begin: 0.0, end: 1.0).animate(
-      CurvedAnimation(
-        parent: _animationController,
-        curve: Curves.easeInOut,
-      ),
-    );
-
     return Drawer(
       child: Container(
         decoration: const BoxDecoration(
@@ -40,7 +28,7 @@ class CustomDrawer extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               FadeInRight(
-                duration: Duration(milliseconds: 300),
+                duration: Duration(milliseconds: 400),
                 child: InkWell(
                   onTap: () => Navigator.pushNamed(context, AppRoutes.students),
                   child: Row(
@@ -54,7 +42,7 @@ class CustomDrawer extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               FadeInRight(
-                duration: Duration(milliseconds: 400),
+                duration: Duration(milliseconds: 500),
                 child: Row(
                   children: const [
                     Icon(FontAwesomeIcons.book),
@@ -65,7 +53,7 @@ class CustomDrawer extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               FadeInRight(
-                duration: Duration(milliseconds: 500),
+                duration: Duration(milliseconds: 600),
                 child: Row(
                   children: const [
                     Icon(FontAwesomeIcons.image),
@@ -76,7 +64,7 @@ class CustomDrawer extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               FadeInRight(
-                duration: Duration(milliseconds: 600),
+                duration: Duration(milliseconds: 700),
                 child: Row(
                   children: const [
                     Icon(FontAwesomeIcons.moneyBill),
@@ -87,7 +75,7 @@ class CustomDrawer extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               FadeInRight(
-                duration: Duration(milliseconds: 700),
+                duration: Duration(milliseconds: 800),
                 child: Row(
                   children: const [
                     Icon(FontAwesomeIcons.solidBell),
@@ -98,7 +86,7 @@ class CustomDrawer extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               FadeInRight(
-                duration: Duration(milliseconds: 800),
+                duration: Duration(milliseconds: 900),
                 child: Row(
                   children: const [
                     Icon(FontAwesomeIcons.book),
